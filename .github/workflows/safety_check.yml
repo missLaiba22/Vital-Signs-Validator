@@ -1,0 +1,20 @@
+name: Clinical Data Safety Net
+
+# TRIGGER: When does the robot wake up?
+on: [push]
+
+# JOBS: What does the robot do?
+jobs:
+  verify-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code (Open the binder)
+        uses: actions/checkout@v3
+
+      - name: Set up Python (Turn on equipment)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run Clinical Validator (Run the test)
+        run: python src/validate_data.py
