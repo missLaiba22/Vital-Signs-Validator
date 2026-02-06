@@ -14,8 +14,6 @@ Just like a hospital crash cart is organized so anyone can find tools in an emer
 | **`data/`** | **The Specimen Fridge** | Contains raw data (`dummy_patients.csv`). It is strictly read-only to prevent contamination. |
 | **`src/`** | **Surgical Instruments** | Contains the Python scripts (`validate_data.py`) that perform the operation. |
 | **`.github/`** | **The Safety Robot** | Contains the automation rules that check our work every time we save. |
-| **`budget.md`** | **The Invoice** | Contains the AWS cost estimation to prove financial feasibility. |
-
 ---
 
 ## 🤖 2. The Safety Circuit (CI/CD)
